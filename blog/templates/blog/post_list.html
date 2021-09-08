@@ -3,8 +3,15 @@
         <title>Página de prueba</title>
     </head>
 <body>
-    <h1>Holiiisssss</h1>
+    <div>
+        <h1> Post publicados</h1>
+    </div>
+    {% for post in posts%}
+        <div>
+            <p>Publicado: {{post.published_date}}</p>
+            <p>{{post.text}}</p>
+        </div>
+    {% endfor%}
 
-    <h2> Que tal !!!!</h2>
 </body>
 </html>
